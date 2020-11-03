@@ -4,7 +4,7 @@ var bin,bin2,bin3
 
 var ground;
 
-var bim
+
 
 const Engine = Matter.Engine;
 const World = Matter.World;
@@ -14,7 +14,6 @@ const Body = Matter.Body;
 
 function preload(){
 
-bim=loadImage("dustbingreen.png")
 
 }
 
@@ -34,10 +33,14 @@ function setup() {
 
 	
 
+	
 	//Create the Bodies Here.
-	b=new Paper(50,200,20,20)
+	
+	bin=new Bi(650,500,120,30)
+	
+	
+	b=new Paper(50,200,50,50)
 
-	bin=new Bi(650,500,100,100)
 	
 	
 
@@ -48,21 +51,21 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("black");
+  background(225);
 
   rect(400,650,800,20)  
 
 
   b.displace();			
   bin.displace();
- 
+	
  
    drawSprites();
 }
 
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(b.body,b.body.position,{x:0.015,y:-0.020})
+		Matter.Body.applyForce(b.body,b.body.position,{x:0.085,y:-0.150})
 	}
 
 

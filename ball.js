@@ -23,11 +23,10 @@ class Paper
 
         image(this.image,0,0,this.width,this.height)
 
-        ellipse(0,0, 30, 30);
+        ellipse(0,0, 5, 5);
 
         pop();
 
     }
-
 
 } 
