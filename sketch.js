@@ -36,7 +36,7 @@ function setup() {
 	
 	//Create the Bodies Here.
 	
-	bin=new Bi(650,500,120,30)
+	bin=new Bi(650,500,120,150)
 	
 	
 	b=new Paper(50,200,50,50)
